@@ -1,0 +1,29 @@
+---
+name: Bug report
+about: Something doesn't work as documented
+title: "[bug] "
+labels: bug
+---
+
+**What happened**
+
+A clear description of the bug.
+
+**Reproduction**
+
+Commands or code that reproduce it. For CLI issues, paste the output of:
+
+```
+decide providers --json
+```
+
+**Expected behavior**
+
+What you expected instead.
+
+**Environment**
+
+- Node version:
+- OS:
+- decide.js version (`decide --version`):
+- Providers involved (and whether keys are set):

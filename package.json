@@ -1,0 +1,70 @@
+{
+  "name": "decide.js",
+  "version": "0.1.0",
+  "description": "The universal SDK for System-1 decision models — one typed API for Jev, Laya, Kev, tev1 and local heuristics. Fast, cheap, provider-agnostic decisions for AI agents.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "decide": "./dist/cli/index.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "cli": "tsx src/cli/index.ts",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "jev",
+    "laya",
+    "decision-model",
+    "system-1",
+    "ai-agents",
+    "llm",
+    "routing",
+    "classification",
+    "yes-no",
+    "reranking",
+    "guardrails",
+    "ai-sdk",
+    "non-autoregressive",
+    "typed-decisions"
+  ],
+  "author": "",
+  "license": "MIT",
+  "homepage": "https://github.com/asertyui1/decide.js#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asertyui1/decide.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/asertyui1/decide.js/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsup": "^8.3.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}

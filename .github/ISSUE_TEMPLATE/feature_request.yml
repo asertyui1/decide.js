@@ -1,0 +1,22 @@
+---
+name: Provider / feature request
+about: Suggest a new decision-model provider, primitive or feature
+title: "[feature] "
+labels: enhancement
+---
+
+**Use case**
+
+What decision are you trying to make? Who would use this?
+
+**Proposed API / UX**
+
+Code snippet or CLI example showing the ideal shape.
+
+**Providers / models involved**
+
+Cloud endpoint docs, self-hosted server, or wire-protocol details.
+
+**Alternatives considered**
+
+How are you solving it today?

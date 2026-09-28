@@ -1,0 +1,57 @@
+<svg width="1200" height="400" viewBox="0 0 1200 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0a0d14"/>
+      <stop offset="1" stop-color="#10182b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="60" y1="120" x2="260" y2="230" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#6366f1"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(1050 40) rotate(135) scale(520)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22d3ee" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="400" fill="url(#bg)"/>
+  <rect width="1200" height="400" fill="url(#glow)"/>
+
+  <!-- logo mark -->
+  <rect x="80" y="120" width="104" height="104" rx="26" fill="url(#accent)"/>
+  <text x="132" y="196" text-anchor="middle" font-family="JetBrains Mono, Consolas, monospace" font-size="58" font-weight="800" fill="#06121a">D</text>
+
+  <!-- wordmark -->
+  <text x="212" y="178" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="64" font-weight="800" letter-spacing="-2" fill="#e6ebf5">Decide<tspan fill="#22d3ee">.js</tspan></text>
+
+  <!-- tagline -->
+  <text x="84" y="282" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="27" font-weight="600" fill="#c6cfdd">One typed API for every <tspan fill="#22d3ee">System-1 decision model</tspan></text>
+  <text x="84" y="318" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="19" fill="#8b94a9">Jev · Laya · Kev · tev1 · self-hosted weights · local heuristics — pick one, fall back freely</text>
+
+  <!-- decision pills -->
+  <g font-family="JetBrains Mono, Consolas, monospace" font-size="15" font-weight="700">
+    <rect x="82" y="344" width="118" height="34" rx="17" fill="#0e2a33" stroke="#155e6a"/>
+    <text x="141" y="366" text-anchor="middle" fill="#22d3ee">choose</text>
+    <rect x="212" y="344" width="106" height="34" rx="17" fill="#0e2a33" stroke="#155e6a"/>
+    <text x="265" y="366" text-anchor="middle" fill="#22d3ee">yes/no</text>
+    <rect x="330" y="344" width="94" height="34" rx="17" fill="#0e2a33" stroke="#155e6a"/>
+    <text x="377" y="366" text-anchor="middle" fill="#22d3ee">score</text>
+    <rect x="436" y="344" width="86" height="34" rx="17" fill="#0e2a33" stroke="#155e6a"/>
+    <text x="479" y="366" text-anchor="middle" fill="#22d3ee">rank</text>
+  </g>
+
+  <!-- right-side fake probability bars -->
+  <g transform="translate(840,120)">
+    <rect width="280" height="160" rx="16" fill="#11151f" stroke="#232a3b"/>
+    <text x="20" y="38" font-family="JetBrains Mono, Consolas, monospace" font-size="13" fill="#8b94a9">$ decide classify - --labels work,spam</text>
+    <g transform="translate(20,58)">
+      <rect x="0" y="0" width="150" height="12" rx="6" fill="#1a2130"/>
+      <rect x="0" y="0" width="26" height="12" rx="6" fill="#3a4458"/>
+      <rect x="0" y="26" width="150" height="12" rx="6" fill="#1a2130"/>
+      <rect x="0" y="26" width="128" height="12" rx="6" fill="url(#accent)"/>
+      <text x="162" y="11" font-family="JetBrains Mono, Consolas, monospace" font-size="11" fill="#8b94a9">12%</text>
+      <text x="162" y="37" font-family="JetBrains Mono, Consolas, monospace" font-size="11" fill="#22d3ee" font-weight="700">85% ▸ spam</text>
+    </g>
+    <text x="20" y="132" font-family="JetBrains Mono, Consolas, monospace" font-size="12" fill="#8b94a9">0.7ms · $0.000000 · heuristic</text>
+  </g>
+</svg>
